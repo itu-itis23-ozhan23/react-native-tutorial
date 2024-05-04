@@ -1,11 +1,11 @@
-import { View, Text, Image } from "react-native";
-const logıImg = require()
+import { View, Text, Image, ImageBackground } from "react-native";
+const logoImg = require("./assets/adaptive-icon.png");
 export default function App() {
   return (
     <View style= {{flex: 1, backgroundColor:"plum", padding:60}}>
-    <Text>
-      <Text style={{color: "white"}}>Hello </Text> World
-    </Text>
+    <ImageBackground source={logoImg} style={{flex: 1}}>
+      <Text>IMAGE TEXT</Text>
+    </ImageBackground>
     </View>
   );
 }
